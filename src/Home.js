@@ -43,7 +43,7 @@ class Home extends Component {
 					textAlign: "center", margin: "auto", marginTop: "100px"
 				}}>
 					<p style={{ margin: 0, fontWeight: "bold" }}>Start sharing your screen</p>
-					<Input type="hidden" placeholder="URL" value="binaryrenko" onChange={e => this.handleChange(e)} />
+					<Input placeholder="URL" onChange={e => this.handleChange(e)} />
 					<Button variant="contained" color="primary" onClick={this.join} style={{ margin: "20px" }}>Go</Button>
 				</div>
 			</div>
