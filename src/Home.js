@@ -18,7 +18,7 @@ class Home extends Component {
 			var url = this.state.url.split("/")
 			window.location.href = `/${url[url.length-1]}`
 		} else {
-			var url = Math.random().toString(36).substring(2, 7)
+			var url = "screensharing"//Math.random().toString(36).substring(2, 7)
 			window.location.href = `/${url}`
 		}
 	}
@@ -43,7 +43,7 @@ class Home extends Component {
 					textAlign: "center", margin: "auto", marginTop: "100px"
 				}}>
 					<p style={{ margin: 0, fontWeight: "bold" }}>Start sharing your screen</p>
-					<Input placeholder="URL" onChange={e => this.handleChange(e)} />
+					{/* <Input placeholder="URL" onChange={e => this.handleChange(e)} /> */}
 					<Button variant="contained" color="primary" onClick={this.join} style={{ margin: "20px" }}>Go</Button>
 				</div>
 			</div>
