@@ -18,7 +18,7 @@ class Home extends Component {
 			var url = this.state.url.split("/")
 			window.location.href = `/${url[url.length-1]}`
 		} else {
-			var url = "screensharing"//Math.random().toString(36).substring(2, 7)
+			var url = "share"//Math.random().toString(36).substring(2, 7)
 			window.location.href = `/${url}`
 		}
 	}
